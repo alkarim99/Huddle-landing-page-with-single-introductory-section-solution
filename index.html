@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-image: url(images/bg-desktop.svg);
+      background-size: cover;
+      background-color: hsl(257, 40%, 49%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      width: 1100px;
+      padding: 30px 0 0 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .container .logo img{
+      width: 200px;
+    }
+    .container .main .hero-img img{
+      width: 600px;
+    }
+    .container .main{
+      padding: 40px 0 0 0;
+      display: flex;
+    }
+    .container .main .content{
+      padding: 10px 0 0 40px;
+      color: #fff;
+    }
+    .container .main .content .title{
+      margin-top: 25px;
+      width: 400px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 34px;
+    }
+    .container .main .content .desc{
+      width: 460px;
+      font-weight: 400;
+    }
+    .container .main .content .register{
+      font-family: 'Poppins', sans-serif;
+      color: hsl(257, 40%, 49%);
+      border: none;
+      border-radius: 50px;
+      padding: 13px 50px;
+    }
+    .container .main .content .register:hover{
+      color: #fff;
+      background-color: hsl(300, 69%, 71%);
+    }
+    .container .social{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .container .social ion-icon{
+      margin-right: 15px;
+      font-size: 30px;
+      color: #fff;
+    }
+    .container .social ion-icon:hover{
+      color: hsl(300, 69%, 71%);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: #fff; }
+    @media screen and (max-width: 375px) {
+      body{
+        background-image: url(images/bg-mobile.svg);
+        background-size: initial;
+        background-repeat: no-repeat;
+      }
+      .container{
+        width: 350px;
+      }
+      .container .logo img{
+        padding-left: 20px;
+        width: 150px;
+      }
+      .container .main .hero-img img{
+        width: 300px;
+      }
+      .container .main{
+        padding: 50px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container .main .content{
+        width: 350px;
+        padding: 0;
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container .main .content .title{
+        margin-bottom: 0;
+        width: 350px;
+        font-size: 26px;
+        text-align: center;
+      }
+      .container .main .content .desc{
+        width: 300px;
+        text-align: center;
+        margin: 16px 0 35px 0;
+      }
+      .container .main .content .register{
+        padding: 10px 90px;
+      }
+      .container .social{
+        margin: 150px 0 30px 0; 
+        justify-content: center;
+      }
+      .container .social ion-icon{
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="main">
+      <div class="hero-img">
+        <img src="images/illustration-mockups.svg" alt="illustration">
+      </div>
+      <div class="content">
+        <p class="title">Build The Community Your Fans Will Love</p>
+        <p class="desc">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion.</p>
+        <button class="register">Register</button>
+      </div>
+    </div>
+    <div class="social">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abdullah Al-Karim</a>.
+    </p>
+  </footer>
+</body>
+</html>
